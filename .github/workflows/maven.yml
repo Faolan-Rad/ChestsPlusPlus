@@ -81,12 +81,10 @@ jobs:
 #         ls -R
 #       shell: bash
               
-    - name: Upload Release Asset
-      id: upload-release-asset 
-      uses: softprops/action-gh-release@v1
+    - name: upload-artifact
+      uses: actions/upload-artifact@v3
       with:
-        draft: true
-        generate_release_notes: true
-        files: |
+        name: testBuild
+        path: |
           ./Server/plugins/ChestsPlusPlus-*.jar
 
