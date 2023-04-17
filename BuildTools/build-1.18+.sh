@@ -4,6 +4,7 @@ echo "Checking BuildTools 1.18+ cache"
 #Local Maven Repo
 MAVEN_DIR="$HOME/.m2"
 
+
 #CraftBukkit in local repo
 SPIGOT="${MAVEN_DIR}/repository/org/spigotmc/spigot"
 
