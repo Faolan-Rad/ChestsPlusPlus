@@ -1,4 +1,4 @@
-package com.jamesdpeters.minecraft.chests.v1_19_R1;
+package com.jamesdpeters.minecraft.chests.v1_19_R2;
 
 import com.jamesdpeters.minecraft.chests.CraftingProvider;
 import com.jamesdpeters.minecraft.chests.CraftingResult;
