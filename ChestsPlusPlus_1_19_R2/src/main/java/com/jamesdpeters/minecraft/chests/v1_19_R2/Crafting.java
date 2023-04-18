@@ -52,9 +52,11 @@ public class Crafting implements CraftingProvider {
 
         // Generate the resulting ItemStack from the Crafting Matrix
         net.minecraft.world.item.ItemStack itemStack = net.minecraft.world.item.ItemStack.EMPTY;
-
+		ServerLevel serverLevel = (ServerLevel) world;
+		RegistryAccess registryAccess = serverLevel.getRegistryAccess();
+		
         if (recipe.isPresent()) {
-            itemStack = recipe.get().assemble(inventoryCrafting);
+            itemStack = recipe.get().assemble(inventoryCrafting, registryAccess);
         }
 
         return createItemCraftResult(CraftItemStack.asBukkitCopy(itemStack), inventoryCrafting, craftWorld.getHandle());
