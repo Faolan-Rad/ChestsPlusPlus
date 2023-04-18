@@ -4,6 +4,7 @@ import com.jamesdpeters.minecraft.chests.ChestsPlusPlus;
 import net.wesjd.anvilgui.AnvilGUI;
 import org.bukkit.entity.Player;
 import java.util.function.BiFunction;
+import java.util.List;
 
 public class TextInputUI {
 
