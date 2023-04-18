@@ -8,3 +8,11 @@ target/
 ChestsPlusPlus.iml
 *.iml
 POEditorImport/src/main/java/com/jamesdpeters/poeditor/POEapi.java
+BuildTools/apache-maven-3.6.0/
+BuildTools/BuildData
+BuildTools/BuildTools.jar
+BuildTools/BuildTools.log.txt
+BuildTools/Bukkit/
+BuildTools/CraftBukkit/
+BuildTools/Spigot/
+BuildTools/work/
