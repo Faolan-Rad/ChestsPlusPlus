@@ -54,7 +54,7 @@ public class Crafting implements CraftingProvider {
         net.minecraft.world.item.ItemStack itemStack = net.minecraft.world.item.ItemStack.EMPTY;
 		
         if (recipe.isPresent()) {
-            itemStack = recipe.get().assemble(inventoryCrafting, craftWorld.getHandle().getRegistryAccess());
+            itemStack = recipe.get().assemble(inventoryCrafting, craftWorld.getHandle().registryAccess());
         }
 
         return createItemCraftResult(CraftItemStack.asBukkitCopy(itemStack), inventoryCrafting, craftWorld.getHandle());
